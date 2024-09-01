@@ -128,22 +128,6 @@ html {
     text-decoration-color: rgb(181, 181, 181);
 }
 
-/* TODO: remove if not use */
-/* .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #fff;
-    color: #204A93;
-} */
-
 @media screen and (max-width: 860px) {
     .navbar__container {
         display: flex;
@@ -175,7 +159,7 @@ html {
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50vh;
+        height: 55vh;
         font-size: 1.6rem;
     }
 
