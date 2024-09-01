@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riley Hart Portfolio</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <nav id="desktopNavigation">
-        <div class="logo">Riley Hart</div>
-        <div>
-            <ul class="navigationLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <div class="logo">Riley Hart</div>
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#experience" class="navbar__links">Experience</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact" class="navbar__links">Contact</a>
+                </li>
+
             </ul>
         </div>
     </nav>
-    <nav id="hamburgerNavigation">
-        <div class="logo">Riley Hart</div>
-        <div class="hamburgerMenu">
-        <div class="hamburgerIcon" id = "hamburgerMenu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            
-        </div>
-        <div class="menuLinks">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
-            </div>    
-        </div>
-    </nav>
-    <script>src="app.js"</script>
-    </body>
-</html>
 
+    <section id="profile">
+        <div class="sectionPictureContainer">
+            <img src="./assets/LinkedInPictureCircleFrame.png" alt="Riley profile picture">
+        </div>
+        <div class="sectionText">
+            <p class="sectionTextP1">Hello, I'm</p>
+            <h1 class="title">Riley Hart</h1>
+            <p class="sectionTextP2">CS Student & Full Stack Seveloper</p>
+            <div class="btnContainer">
+                <button class="btn btnDownloadResume" onclick="window.open('./assets/Resume - Riley Wasdyke.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btnContactInformation" onclick="location.href = './#contact'">
+                    Contact Information
+                </button>
+            </div>
+            <div id="socialsContainer">
+                <img src="./assets/linkedin.png" alt="LinkedInProfile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/rileywasdyke/'">
+                <img src="./assets/github.png" alt="GitHubProfile" class="icon"
+                    onclick="location.href='https://github.com/rileyhart23'">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,8 +1,7 @@
-const menu = document.querySelector(".menuLinks");
-const icon = document.querySelector(".hamburgerIcon");
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
 
-    menu.addEventListener('click', function(){ 
-        menu.classList.toggle("open");
-        icon.classList.toggle("open");
-    });
-   
+menu.addEventListener('click', function () {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+});
