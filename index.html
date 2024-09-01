@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riley Hart Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <nav id="desktopNavigation">
+        <div class="logo">Riley Hart</div>
+        <div>
+            <ul class="navigationLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburgerNavigation">
+        <div class="logo">Riley Hart</div>
+        <div class="hamburgerMenu">
+        <div class="hamburgerIcon" id = "hamburgerMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            
+        </div>
+        <div class="menuLinks">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </div>    
+        </div>
+    </nav>
+    <script>src="app.js"</script>
+    </body>
+</html>
+

@@ -1,0 +1,276 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
+
+
+
+/* Just the * or sta targets the whole page */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: "Scheherazade New", serif;
+}
+
+.scheherazade-new-regular {
+    font-family: "Scheherazade New", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.scheherazade-new-medium {
+    font-family: "Scheherazade New", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.scheherazade-new-semibold {
+    font-family: "Scheherazade New", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+.scheherazade-new-bold {
+    font-family: "Scheherazade New", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* Scroll behavior on page */
+html {
+    scroll-behavior: smooth;
+  }
+
+p {
+    color: rgb(red, green, blue);
+}
+
+/* Transitions */
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* Desktop Navigation */
+nav, .navigationLinks{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.navigationLinks{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.85rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+
+/* Dropdown Menu */
+
+#hamburgerNavigation{
+    display: none;
+}
+
+.hamburgerMenu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburgerIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+.hamburgerIcon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menuLinks{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menuLinks a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;;
+}
+@media screen and (max-width: 960px) {
+    .desktopNavigation{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .hamburgerMenu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #eed6c2;
+        }
+
+    .hamburgerMenu.active{
+        background: #eed6c2;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+
+    #logo{
+        padding-left: 25px;
+    }
+
+    .hamburgerIcon .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    #hamburgerMenu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #hamburgerMenu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #hamburgerMenu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .navigationLinks{
+        width: 100%;
+    }
+
+    .navigationLinks{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #hamburgerMenu{
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile.-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile.-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile.-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    
+
+    
+}
+
+
+/* 
+.menuLinks li{
+    list-style: none;
+}
+
+.menuLinks.open{
+    max-height: 300px;
+}
+
+.hamburgerIcon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburgerIcon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburgerIcon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburgerIcon span:first-child{
+    transform: none;
+}
+.hamburgerIcon span:first-child{
+    opacity: 1;
+}
+.hamburgerIcon span:first-child{
+    transform: none;
+} */

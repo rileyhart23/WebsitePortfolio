@@ -1,0 +1,8 @@
+const menu = document.querySelector(".menuLinks");
+const icon = document.querySelector(".hamburgerIcon");
+
+    menu.addEventListener('click', function(){ 
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+    });
+   
