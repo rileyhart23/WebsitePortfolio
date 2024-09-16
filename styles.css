@@ -344,3 +344,107 @@ section {
 .btnContainer {
     gap: 1rem;
 }
+
+#aboutMeSection {
+    text-align: center;
+    margin: 50px 0;
+    scroll-margin-top: 100px;
+    /* Adjust this value based on your header's height */
+
+}
+
+.aboutMeP1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.aboutMeTitle {
+    font-size: 48px;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.aboutMeP1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+
+.aboutMeSectionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.aboutMeImage {
+    max-width: 400px;
+    margin-right: 30px;
+}
+
+.aboutMeImage img {
+    max-width: 100%;
+}
+
+.aboutMeDetailsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.detailsContainer {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.detailsContainer h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.detailsContainer p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.icon {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.aboutMeParagraph {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.aboutMeParagraph p {
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    /* Clean and modern font */
+}
+
+.arrow {
+    position: absolute;
+    right: 2.5rem;
+}
