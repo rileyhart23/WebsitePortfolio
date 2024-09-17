@@ -1,113 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riley Hart Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo">
-                <div class="logo">Riley Hart</div>
-            </a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="#getToKnowMore" class="navbar__links">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#experienceSection" class="navbar__links">Experience</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#projectsSection" class="navbar__links">Projects</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contactSection" class="navbar__links">Contact</a>
-                </li>
-
-            </ul>
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <div class="logo">Riley Hart</div>
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-
-
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#getToKnowMore" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#experienceSection" class="navbar__links">Experience</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projectsSection" class="navbar__links">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contactSection" class="navbar__links">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <section id="profile">
-        <div class="sectionPictureContainer">
-            <img src="./assets/LinkedInPictureCircleFrame.png" alt="Riley profile picture">
+      <div class="sectionPictureContainer">
+        <img
+          src="./assets/LinkedInPictureCircleFrame.png"
+          alt="Riley profile picture"
+        />
+      </div>
+      <div class="sectionText">
+        <p class="sectionTextP1">Hello, I'm</p>
+        <h1 class="title">Riley Hart</h1>
+        <p class="sectionTextP2">CS Student & Full Stack Seveloper</p>
+        <div class="btnContainer">
+          <button
+            class="btn btnDownloadResume"
+            onclick="window.open('./assets/Resume - Riley Wasdyke.pdf')"
+          >
+            Download Resume
+          </button>
+          <button
+            class="btn btnContactInformation"
+            onclick="location.href = './#contact'"
+          >
+            Contact Information
+          </button>
         </div>
-        <div class="sectionText">
-            <p class="sectionTextP1">Hello, I'm</p>
-            <h1 class="title">Riley Hart</h1>
-            <p class="sectionTextP2">CS Student & Full Stack Seveloper</p>
-            <div class="btnContainer">
-                <button class="btn btnDownloadResume" onclick="window.open('./assets/Resume - Riley Wasdyke.pdf')">
-                    Download Resume
-                </button>
-                <button class="btn btnContactInformation" onclick="location.href = './#contact'">
-                    Contact Information
-                </button>
-            </div>
-            <div id="socialsContainer">
-                <img src="./assets/linkedin.png" alt="LinkedInProfile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/rileywasdyke/'">
-                <img src="./assets/github.png" alt="GitHubProfile" class="icon"
-                    onclick="location.href='https://github.com/rileyhart23'">
-            </div>
+        <div id="socialsContainer">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedInProfile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rileywasdyke/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHubProfile"
+            class="icon"
+            onclick="location.href='https://github.com/rileyhart23'"
+          />
         </div>
+      </div>
     </section>
 
     <section id="aboutMeSection">
-        <p id="getToKnowMore" class="aboutMeP1">Get To Know More</p>
-        <h1 class="aboutMeTitle">About Me</h1>
-        <div class="aboutMeSectionContainer">
-            <div class="aboutMeImage">
-                <img src="./assets/LinkedInPictureCircleFrame.png" alt="About me profile picture"
-                    class="aboutMePicture" />
-            </div>
-            <div class="aboutMeDetailsContainer">
-                <div class="detailsContainer">
-                    <img src="./assets/experience.png" alt="experience icon" class="icon" />
-                    <h3>Experience</h3>
-                    <p>3+ years <br>Self Taught Developer</p>
-                </div>
-                <div class="detailsContainer">
-                    <img src="./assets/education.png" alt="education icon" class="icon" />
-                    <h3>Education</h3>
-                    <p>CS Bachelor's Degree <br>CS Student</p>
-                </div>
-
-            </div>
-
-
+      <p id="getToKnowMore" class="aboutMeP1">Get To Know More</p>
+      <h1 class="aboutMeTitle">About Me</h1>
+      <div class="aboutMeSectionContainer">
+        <div class="aboutMeImage">
+          <img
+            src="./assets/LinkedInPictureCircleFrame.png"
+            alt="About me profile picture"
+            class="aboutMePicture"
+          />
         </div>
-        <div class="aboutMeParagraph">
-            <p>I’m a 21-year-old senior studying Computer Science, passionate about the world of technology and
-                problem-solving.
-                As I near the end of my academic journey, I’m excited to apply the skills and knowledge
-                I’ve gained in my field. After graduation, I’ll be embarking on a new chapter, working for the
-                Department of Defense, where I look forward to contributing to national security through
-                innovative
-                solutions in technology. My experiences in college have prepared me for the challenges ahead,
-                and I’m
-                eager to make an impact in this critical field.</p>
-
+        <div class="aboutMeDetailsContainer">
+          <div class="detailsContainer">
+            <img
+              src="./assets/experience.png"
+              alt="experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>3+ years <br />Self Taught Developer</p>
+          </div>
+          <div class="detailsContainer">
+            <img
+              src="./assets/education.png"
+              alt="education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>CS Bachelor's Degree <br />CS Student</p>
+          </div>
         </div>
+      </div>
+      <div class="aboutMeParagraph">
+        <p>
+          I’m a 21-year-old senior studying Computer Science, passionate about
+          the world of technology and problem-solving. As I near the end of my
+          academic journey, I’m excited to apply the skills and knowledge I’ve
+          gained in my field. After graduation, I’ll be embarking on a new
+          chapter, working for the Department of Defense, where I look forward
+          to contributing to national security through innovative solutions in
+          technology. My experiences in college have prepared me for the
+          challenges ahead, and I’m eager to make an impact in this critical
+          field.
+        </p>
+      </div>
 
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-            onclick="location.href='./experienceSection'" />
-
-
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./experienceSection'"
+      />
     </section>
     <script src="app.js"></script>
-
-</body>
-
+  </body>
 </html>
